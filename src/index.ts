@@ -7,7 +7,7 @@ const PORT = 3000
 
 app.get('/ping', (_req, res) => { //_req to avoid warnings
     console.log(`ping - ${new Date().toLocaleDateString()}`);
-    res.send('pong')
+    res.send('pong!!!')
 })
 
 app.listen(PORT, () => {
