@@ -1,9 +1,11 @@
 import express from 'express'
 
+import * as diaryServices from '../services/diary'
+
 const diaryRouter = express.Router()
 
 diaryRouter.get('/', (_req, res) => {
-  res.send('Fetching all entry diaries')
+  res.send(diaryServices.getEntriesWithoutSensitiveInfo())
 })
 
 diaryRouter.post('/', (_req, res) => {
