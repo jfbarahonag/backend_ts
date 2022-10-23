@@ -8,6 +8,15 @@ diaryRouter.get('/', (_req, res) => {
   res.send(diaryServices.getEntriesWithoutSensitiveInfo())
 })
 
+diaryRouter.get('/:id', (req, res) => {
+//   const diary = diaryServices.findById(Number(req.params.id))
+  console.log(req.params.id)
+  const diary = diaryServices.findById(+req.params.id)
+  return (diary !== undefined)
+    ? res.send(diary)
+    : res.sendStatus(404)
+})
+
 diaryRouter.post('/', (_req, res) => {
   res.send('Saving a diary')
 })
