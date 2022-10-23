@@ -20,12 +20,12 @@ diaryRouter.get('/:id', (req, res) => {
 diaryRouter.post('/', (req, res) => {
   const { date, weather, visibility, comment } = req.body
 
-  const newDiaryEntry = diaryServices.addDiary(
+  const newDiaryEntry = diaryServices.addDiary({
     date,
     weather,
     visibility,
     comment
-  )
+  })
   res.json(newDiaryEntry)
 })
 
