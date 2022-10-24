@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "date": "2022-01-01",
+        "weather": "rainy",
+        "visibility": "poor",
+        "comment": "Scary flight"
+    },
+    {
+        "id": 2,
+        "date": "2022-02-02",
+        "weather": "sunny",
+        "visibility": "excellent",
+        "comment": "Boring"
+    },
+    {
+        "id": 3,
+        "date": "2022-03-03",
+        "weather": "cloudy",
+        "visibility": "good",
+        "comment": "Interesting flight. I'm learning much"
+    }
+]

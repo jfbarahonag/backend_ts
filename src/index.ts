@@ -5,7 +5,7 @@ import diaryRouter from './routes/diaries'
 const app = express()
 app.use(express.json()) // req.body to json
 
-const PORT = 3001
+const PORT = 3000
 
 app.get('/ping', (_req, res) => { // _req to avoid warnings
   console.log(`ping - ${new Date().toLocaleDateString()}`)
